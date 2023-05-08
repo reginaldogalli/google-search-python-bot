@@ -9,7 +9,7 @@ while contador <= 30:
     navegador = webdriver.Chrome()
     navegador.get("https://www.google.com/search?q=msa+ccb")
     navegador.find_element("xpath", '//*[@id="botstuff"]/div/div[2]/table/tbody/tr/td[3]/a').click()
-    navegador.find_element("xpath", '//*[@id="rso"]/div[7]/div/div/div[1]/div/a/h3').click()
+    navegador.find_element("xpath", '//*[@id="rso"]/div[8]/div/div/div[1]/div/a/div/div/span').click()
     tempo = random.randint(5,20)
     time.sleep(tempo)
     navegador.find_element("xpath", '/html/body/main/section[2]/a').click()
