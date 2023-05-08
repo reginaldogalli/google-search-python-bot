@@ -7,8 +7,8 @@ contador = 0
 options = webdriver.ChromeOptions()
 options.add_argument("--headless=new")
 while contador <= 30:
-    #driver = webdriver.Chrome(options=options)
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(options=options)
+    #driver = webdriver.Chrome()
     driver.get("https://www.google.com/search?q=msa+ccb")
     driver.find_element(By.XPATH, '//*[@id="botstuff"]/div/div[2]/table/tbody/tr/td[3]/a/span').click()
     #driver.find_element("xpath", '//*[@id="botstuff"]/div/div[2]/table/tbody/tr/td[3]/a').click()
