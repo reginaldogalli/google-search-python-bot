@@ -20,3 +20,4 @@ while contador <= 30:
     time.sleep(600)
     driver.close()
     contador = contador + 1
+    print(contador)
