@@ -5,7 +5,9 @@ import time
 
 contador = 0
 options = webdriver.ChromeOptions()
+#options.add_argument("start-maximized")
 options.add_argument("--headless=new")
+options.add_experimental_option('excludeSwitches', ['enable-logging'])
 while contador <= 50:
     driver = webdriver.Chrome(options=options)
     #driver = webdriver.Chrome()
