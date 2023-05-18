@@ -5,8 +5,8 @@ import time
 
 contador = 0
 options = webdriver.ChromeOptions()
-#options.add_argument("start-maximized")
-options.add_argument("--headless=new")
+options.add_argument("start-maximized")
+#options.add_argument("--headless=new")
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 while contador <= 50:
     driver = webdriver.Chrome(options=options)
@@ -14,9 +14,9 @@ while contador <= 50:
     driver.get("https://www.google.com/search?q=msa+ccb")
     print('driver.get("https://www.google.com/search?q=msa+ccb")')
     time.sleep(2)
-    driver.find_element(By.XPATH, '//*[@id="botstuff"]/div/div[2]/table/tbody/tr/td[3]/a/span').click()
-    print('driver.find_element(By.XPATH, //*[@id="botstuff"]/div/div[2]/table/tbody/tr/td[3]/a/span).click()')
-    time.sleep(2)
+    #driver.find_element(By.XPATH, '//*[@id="botstuff"]/div/div[2]/table/tbody/tr/td[3]/a/span').click()
+    #print('driver.find_element(By.XPATH, //*[@id="botstuff"]/div/div[2]/table/tbody/tr/td[3]/a/span).click()')
+    #time.sleep(2)
     #driver.find_element("xpath", '//*[@id="botstuff"]/div/div[2]/table/tbody/tr/td[3]/a').click()
     #driver.find_element("xpath", '//*[@id="rso"]/div[8]/div/div/div[1]/div/a/div/div/span').click()
     try:
