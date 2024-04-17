@@ -24,7 +24,7 @@ while contador <= 50:
         print('driver.find_element(By.PARTIAL_LINK_TEXT, https://msaccb.com.br).click()')
         tempo = random.randint(5,20)
         time.sleep(tempo)
-        driver.find_element(By.XPATH, '/html/body/main/section[2]/a').click()
+        driver.find_element(By.XPATH, '/html/body/header/nav/div/ul/div/li[2]/a').click()
         print('driver.find_element(By.XPATH, /html/body/main/section[2]/a).click()')
         time.sleep(600)
     finally:
