@@ -80,7 +80,7 @@ time.sleep(1)
 navegador.find_element(By.XPATH, '//*[@id="inputValue"]').send_keys('1')
 navegador.find_element(By.XPATH, '//*[@id="change"]').click()
 navegador.find_element(By.XPATH, '//*[@id="change"]').send_keys('\ue00c')
-
 time.sleep(3)
-
 print('Alyterações concluídas')
+#%%
+input('aperte uma tecla para fechar o programa...')
